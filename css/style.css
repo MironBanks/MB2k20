@@ -2,6 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -69,7 +71,7 @@ body {
 .logo a {
 	margin: 0 auto 0 20px;
 	font-family: 'Teko';
-	font-weight: bolder;
+	font-weight: 500;
 	font-size: 3rem;
 	list-style: none;
 }
@@ -100,9 +102,20 @@ body {
 }
 
 .media ul li {
-	font-size: 1.7rem;
+	font-size: 2.1rem;
 	margin: 24px 0;
 	list-style: none;
+}
+
+.media a {
+	-webkit-transition: margin 0.5s ease-out;
+	-moz-transition: margin 0.5s ease-out;
+	-o-transition: margin 0.5s ease-out;
+}
+
+.media a:hover {
+	cursor: pointer;
+	margin-left: 10px;
 }
 
 .contact-static {

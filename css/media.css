@@ -11,3 +11,58 @@
 		display: none;
 	}
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.phone {
+		display: none;
+	}
+
+	.media ul {
+		left: 80px;
+		bottom: 100px;
+	}
+
+	.s-one {
+		width: 1px;
+		height: 110px;
+		left: 98px;
+	}
+
+	.contact-static {
+		right: 8px;
+		bottom: 230px;
+	}
+
+	.s-two {
+		width: 1px;
+		height: 110px;
+		right: 117px;
+	}
+
+	.about {
+		flex-direction: column;
+		width: 75vw;
+		height: 60vh;
+		margin: 20rem auto;
+	}
+
+	.about-details {
+		margin-top: 5rem;
+	}
+
+	.portfolio-title {
+		width: 60%;
+	}
+
+	.project {
+		height: 30vh;
+		width: 75vw;
+		margin-bottom: 2rem;
+	}
+
+	.project-heading a {
+		padding: 0 auto;
+		font-size: 3rem;
+		font-weight: 200;
+	}
+}
