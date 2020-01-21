@@ -9,6 +9,7 @@ html {
 	font-family: 'Roboto', sans-serif;
 	overflow: scroll;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
 	width: 0px; /* Remove scrollbar space */
@@ -37,7 +38,9 @@ h6 {
 }
 
 p {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 2.5rem;
 }
 
 body {
@@ -46,7 +49,7 @@ body {
 	background: #fff;
 }
 
-ul li {
+.header ul li {
 	list-style: none;
 }
 
@@ -73,7 +76,7 @@ ul li {
 
 .header-menu li a {
 	margin: 0 auto 0 20px;
-	padding: 14px 20px;
+	padding: 1px 20px;
 	font-family: 'Teko';
 	font-weight: 300;
 	font-size: 3rem;
@@ -82,39 +85,10 @@ ul li {
 	left: 50%;
 }
 
-.resume a:hover {
-	color: black;
+.resume a {
+	border: solid 1px black;
 }
-
-.btn {
-	position: relative;
-	display: block;
-	overflow: hidden;
-	transition: 1s all ease;
-}
-
-.btn::before {
-	background: #ff7675;
-	content: '';
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: -1;
-	transition: all 0.4s ease;
-}
-
-.btn1::before {
-	width: 100%;
-	height: 0;
-	transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.btn1:hover::before {
-	height: 380%;
-}
+/* STATIC ELEMENTS START*/
 
 .media ul {
 	list-style: none;
@@ -128,6 +102,7 @@ ul li {
 .media ul li {
 	font-size: 1.7rem;
 	margin: 24px 0;
+	list-style: none;
 }
 
 .contact-static {
@@ -147,8 +122,9 @@ ul li {
 	position: fixed;
 	width: 2px;
 	height: 160px;
-	background: rgba(0, 0, 0, 0.2);
+	background: #ff7675;
 	left: 150px;
+	z-index: 1;
 }
 
 .s-two {
@@ -156,9 +132,12 @@ ul li {
 	position: fixed;
 	width: 2px;
 	height: 160px;
-	background: rgba(0, 0, 0, 0.2);
+	background: #ff7675;
 	right: 150px;
+	z-index: 1;
 }
+
+/* STATIC ELEMENTS START*/
 
 /* SECTION ONE START*/
 
@@ -183,8 +162,7 @@ ul li {
 
 /* SECTION ONE FINISH*/
 
-.landing-page,
-.about {
+.landing-page {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -195,4 +173,315 @@ ul li {
 	height: 90vh;
 	margin: 0 auto;
 	position: relative;
+}
+
+/* SECTION ONE FINISH*/
+/* SECTION ABOUT ME START*/
+
+.about {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	width: 90vw;
+	max-width: 120rem;
+	height: 60vh;
+	margin: 0 auto;
+	position: relative;
+}
+
+.about-details {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	width: 100%;
+	padding: 30px;
+}
+
+.profile-img {
+	display: flex;
+	width: 80%;
+	margin: auto 20px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.about-heading {
+	text-align: center;
+	line-height: 0;
+	margin-bottom: 6rem;
+}
+
+.about-heading h1 {
+	padding-top: 0.8rem;
+	font-size: 7rem;
+	font-family: 'Teko';
+}
+
+.about-heading h1::before {
+	content: '';
+	background: #ff7675;
+	display: block;
+	height: 1px;
+	position: relative;
+	width: 180px;
+}
+
+.language {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+	text-align: left;
+}
+
+.language ul li {
+	font-size: 1.6rem;
+	font-weight: 200;
+	padding: 5px;
+}
+
+.language ul {
+	list-style: none;
+	margin: 0.75em 0;
+	padding: 0 1em;
+}
+
+.language li:before {
+	content: '';
+	border-color: transparent #ff7675;
+	border-style: solid;
+	border-width: 0.35em 0 0.35em 0.45em;
+	display: block;
+	height: 0;
+	left: -1em;
+	position: relative;
+	top: 0.9em;
+	width: 0;
+}
+
+/* SECTION PORTFOLIO START*/
+.portfolio {
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	padding: 0 auto;
+	margin: 0 auto;
+}
+
+.portfolio-title {
+	text-align: right;
+	line-height: 0;
+	margin-top: 10rem;
+	margin-bottom: 5rem;
+	width: 20%;
+}
+
+.portfolio-title h1 {
+	font-size: 6rem;
+}
+.portfolio-title h1::before {
+	content: '';
+	background: #ff7675;
+	display: block;
+	height: 1px;
+	position: relative;
+	width: 210px;
+}
+
+.project {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	width: 90vw;
+	max-width: 160rem;
+	height: 40vh;
+	padding: 0 auto;
+	margin-bottom: 5rem;
+	position: relative;
+}
+
+.project-second {
+	flex-direction: row;
+}
+
+.project-img {
+	display: flex;
+	width: 100%;
+	margin: auto 20px;
+}
+
+.project-img img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+.project-img:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.project-details {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	width: 80%;
+	padding: 30px;
+}
+
+.project-heading {
+	text-align: left;
+	line-height: 0;
+	margin-bottom: 6rem;
+}
+
+.project-heading h4 {
+	padding: 0 auto;
+	margin: 5rem auto;
+	font-size: 1.8rem;
+	font-family: 'Teko';
+	font-weight: 200;
+}
+
+.project-heading a {
+	padding: 0 auto;
+	font-size: 5rem;
+	font-family: 'Teko';
+	font-weight: 300;
+}
+
+.project-lang {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.__project-lang {
+	display: flex;
+	flex-direction: row;
+}
+
+.project-lang h6 {
+	margin-right: 3rem;
+	font-size: 2rem;
+	font-family: 'Teko';
+	font-weight: 200;
+	align-items: flex-start;
+}
+
+.project-lang a {
+	margin-right: 3rem;
+	font-size: 2rem;
+}
+
+/* SECTION PORTFOLIO END*/
+
+/* SECTION CONTACT START*/
+
+.__contact {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	width: 90vw;
+	max-width: 120rem;
+	height: 60vh;
+	margin: 0 auto;
+	position: relative;
+}
+
+.contact-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	padding: 30px;
+}
+
+.contact-heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	line-height: 0;
+	margin-bottom: 8rem;
+}
+
+.contact-heading h4 {
+	padding-top: 0.8rem;
+	font-size: 3rem;
+	font-weight: 200;
+	font-family: 'Teko';
+	margin-bottom: 5rem;
+}
+
+.contact-heading h1 {
+	padding-top: 0.8rem;
+	font-size: 7rem;
+	font-family: 'Teko';
+	width: 60rem;
+	margin-right: 30px;
+}
+
+/* SECTION CONTACT END*/
+
+.copyright {
+	background-color: #f5f5f5;
+	width: 100%;
+	text-align: center;
+	padding: 1.3rem 0;
+	position: relative;
+}
+
+.copyright p {
+	font-size: 1.5rem;
+}
+
+.up {
+	position: absolute;
+	width: 5rem;
+	height: 5rem;
+	background-color: #ffe6e6;
+	top: -2.5rem;
+	right: 5rem;
+	border-radius: 100%;
+	display: flex;
+	animation: pulse 2s infinite;
+	cursor: pointer;
+}
+
+.up i {
+	font-size: 2rem;
+	margin: auto;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(195, 79, 79, 0.99);
+	}
+	70% {
+		box-shadow: 0 0 0 1.5rem rgba(195, 79, 79, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(195, 79, 79, 0);
+	}
 }

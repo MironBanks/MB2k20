@@ -7,3 +7,21 @@ const handleClick = () => {
 };
 
 hamburger.addEventListener('click', handleClick);
+
+$(document).ready(function() {
+	$('#up').on('click', function() {
+		$('html,body').animate(
+			{
+				scrollTop: 0
+			},
+			2000
+		);
+	});
+	AOS.init({
+		easing: 'ease',
+		duration: 1800,
+		once: true
+	});
+});
+
+console.log("If you can see this you're awesome!");
