@@ -1,5 +1,6 @@
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.navigation');
+const items = document.querySelector('.navigation__list');
 
 const handleClick = () => {
 	hamburger.classList.toggle('hamburger--active');
@@ -7,6 +8,13 @@ const handleClick = () => {
 };
 
 hamburger.addEventListener('click', handleClick);
+
+const itemsClick = () => {
+	hamburger.classList.toggle('hamburger--active');
+	nav.classList.toggle('navigation--active');
+};
+
+items.addEventListener('click', itemsClick);
 
 $(document).ready(function() {
 	$('#up').on('click', function() {
