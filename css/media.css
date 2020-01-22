@@ -320,29 +320,46 @@
 	}
 
 	p {
-		line-height: 2rem;
+		font-size: 1.6rem;
+		font-weight: 300;
+		line-height: 2.2rem;
 	}
 
 	.media ul {
 		left: 80px;
-		bottom: 100px;
+		bottom: 40px;
+	}
+
+	.media ul li {
+		font-size: 1.6rem;
 	}
 
 	.s-one {
 		width: 1px;
-		height: 110px;
+		height: 65px;
 		left: 98px;
 	}
 
 	.contact-static {
 		right: 8px;
-		bottom: 230px;
+		bottom: 170px;
 	}
 
 	.s-two {
 		width: 1px;
-		height: 110px;
+		height: 65px;
 		right: 117px;
+	}
+
+	.tag-title {
+		font-size: 11.5rem;
+		padding-top: 5rem;
+		line-height: 5rem;
+	}
+
+	.tag {
+		font-size: 6rem;
+		margin-bottom: 30px;
 	}
 
 	.about {
@@ -354,6 +371,106 @@
 
 	.about-details {
 		margin-top: 5rem;
+		width: 80%;
+	}
+
+	.profile-img {
+		display: flex;
+		width: 60%;
+		margin: auto 20px;
+	}
+
+	.portfolio-title {
+		width: 60%;
+	}
+
+	.project {
+		height: 100%;
+		width: 75vw;
+		margin-bottom: 2rem;
+	}
+
+	.project-heading a {
+		padding: 0 auto;
+		font-size: 3rem;
+		font-weight: 200;
+	}
+
+	.project-lang h6 {
+		font-size: 1.8rem;
+	}
+
+	.__contact {
+		width: 90vw;
+		max-width: 120rem;
+		height: 100vh;
+	}
+}
+/* macbook 1236-650 */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+	.phone {
+		display: none;
+	}
+
+	p {
+		font-size: 1.6rem;
+		font-weight: 300;
+		line-height: 2.2rem;
+	}
+
+	.media ul {
+		left: 80px;
+		bottom: 40px;
+	}
+
+	.media ul li {
+		font-size: 1.6rem;
+	}
+
+	.s-one {
+		width: 1px;
+		height: 65px;
+		left: 98px;
+	}
+
+	.contact-static {
+		right: 8px;
+		bottom: 170px;
+	}
+
+	.s-two {
+		width: 1px;
+		height: 65px;
+		right: 117px;
+	}
+
+	.tag-title {
+		font-size: 11.5rem;
+		padding-top: 5rem;
+		line-height: 5rem;
+	}
+
+	.tag {
+		font-size: 6rem;
+		margin-bottom: 30px;
+	}
+
+	.about {
+		flex-direction: column;
+		width: 75vw;
+		height: 100%;
+		margin: 20rem auto;
+	}
+
+	.about-details {
+		margin-top: 5rem;
+		width: 80%;
+	}
+
+	.profile-img {
+		display: flex;
+		width: 60%;
+		margin: auto 20px;
 	}
 
 	.portfolio-title {
