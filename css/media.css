@@ -159,6 +159,14 @@
 		font-size: 1.5rem;
 	}
 
+	.other-projects-heading h1 {
+		font-size: 4rem;
+	}
+
+	.other-projects-wrapper {
+		flex-direction: column;
+	}
+
 	.__contact {
 		width: 90vw;
 		max-width: 120rem;
@@ -283,6 +291,12 @@
 		font-size: 2rem;
 	}
 
+	.other-projects-wrapper {
+		float: left;
+		display: flex;
+		flex-direction: column;
+	}
+
 	.__contact {
 		width: 90vw;
 		max-width: 120rem;
@@ -398,6 +412,16 @@
 
 	.project-lang h6 {
 		font-size: 1.8rem;
+	}
+
+	.other-projects {
+		width: 70vw;
+	}
+
+	.other-projects-wrapper {
+		float: left;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.__contact {
