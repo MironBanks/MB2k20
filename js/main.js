@@ -27,4 +27,28 @@ $(document).ready(function() {
 	});
 });
 
+//API GIT UPDATE updated_at
+let gitHubData;
+const updateDate = document.getElementById('lastUpdate__date');
+let updateDate__mil;
+
+fetch('https://api.github.com/repos/MironBanks/FavNote01.02')
+	.then(res => res.json())
+	.then(data => initialize(data));
+
+function initialize(gitData) {
+	gitHubData = gitData;
+
+	updateDate.textContent = Date.parse(gitHubData.updated_at);
+	updateDate__mil = updateDate.textContent;
+}
+
+setTimeout(() => {
+	console.log(gitHubData);
+}, 700);
+
+setTimeout(() => {
+	console.log(updateDate__mil);
+}, 700);
+
 console.log("If you can see this you're awesome!");

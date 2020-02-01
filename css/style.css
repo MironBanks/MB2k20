@@ -392,6 +392,20 @@ img {
 	flex-direction: row;
 }
 
+.__project-git {
+	width: 45%;
+
+	display: flex;
+	flex-direction: row;
+}
+
+.__project-git h4 {
+	font-size: 2rem;
+	font-family: 'Teko';
+	font-weight: 200;
+	margin-right: 0.8rem;
+}
+
 .project-lang h6 {
 	margin-right: 3rem;
 	font-size: 2rem;
@@ -401,7 +415,7 @@ img {
 }
 
 .project-lang a {
-	margin-right: 3rem;
+	margin: 0 2rem;
 	font-size: 2rem;
 }
 
