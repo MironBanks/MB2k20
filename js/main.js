@@ -27,6 +27,15 @@ $(document).ready(function() {
 	});
 });
 
+//Counter
+
+let origin = 0.0;
+setInterval(function() {
+	document.querySelector('#distance').innerHTML = Math.ceil(origin);
+	origin += 1.9;
+}, 100);
+
+/*
 //API GIT UPDATE updated_at
 let gitHubData;
 const updateDate = document.getElementById('lastUpdate__date');
@@ -50,11 +59,5 @@ setTimeout(() => {
 setTimeout(() => {
 	console.log(updateDate__mil);
 }, 700);
-
-let origin = 0.0;
-setInterval(function() {
-	document.querySelector('#distance').innerHTML = Math.ceil(origin);
-	origin += 1.9;
-}, 100);
-
+*/
 console.log("If you can see this you're awesome!");
