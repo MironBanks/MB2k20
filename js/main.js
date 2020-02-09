@@ -27,6 +27,19 @@ $(document).ready(function() {
 	});
 });
 
+// SHOW MORE BUTTON
+
+const show_more = document.getElementById('show_more');
+const project_archive = document.querySelector('.project__archive');
+
+//remove class from project__archive
+function toggleClass() {
+	project_archive.classList.toggle('project__archive');
+	document.getElementById('show_more_text').innerHTML = 'Show Less';
+}
+
+show_more.addEventListener('click', toggleClass);
+
 //Counter
 
 let origin = 0.0;

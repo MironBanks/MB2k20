@@ -521,6 +521,24 @@ img {
 	align-items: flex-start;
 }
 
+.project__archive {
+	display: none;
+}
+
+.show_more {
+	margin: 60px 0 0 0;
+	padding: 0 auto;
+	font-family: 'Teko';
+	font-weight: 300;
+	font-size: 3rem;
+	list-style: none;
+}
+
+.show_more a {
+	border: solid 1px black;
+	padding: 10px 20px;
+}
+
 /* SECTION OTHER PROJECTS END*/
 
 /* SECTION CONTACT START*/
