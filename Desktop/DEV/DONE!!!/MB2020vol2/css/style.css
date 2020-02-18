@@ -1,0 +1,661 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+	overflow: scroll;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+	width: 0px; /* Remove scrollbar space */
+	background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+#distance {
+	font-size: 2.4rem;
+	font-family: 'Teko';
+	font-weight: 300;
+	bottom: 0;
+	position: fixed;
+	left: 100px;
+	z-index: 1;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #ff7675;
+}
+
+h1 {
+	font-size: 11rem;
+	font-family: 'Teko';
+	font-weight: 300;
+}
+
+h6 {
+	font-size: 1.8rem;
+	font-weight: 300;
+	line-height: 2.5rem;
+}
+
+p {
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 2.5rem;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background: #f1f1f1;
+}
+
+.header ul li {
+	list-style: none;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 2rem;
+}
+
+.header-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.logo a {
+	margin: 0 auto 0 20px;
+	font-family: 'Teko';
+	font-weight: 500;
+	font-size: 3rem;
+	list-style: none;
+}
+
+.header-menu li a {
+	margin: 0 auto 0 20px;
+	padding: 1px 20px;
+	font-family: 'Teko';
+	font-weight: 300;
+	font-size: 3rem;
+	list-style: none;
+	top: 50%;
+	left: 50%;
+}
+
+.resume a {
+	border-radius: 3%;
+	padding: 10px 20px;
+	box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1),
+		-1rem -1rem 2rem rgba(255, 255, 255, 0.5);
+}
+
+.resume a:hover {
+	box-shadow: inset 1rem 1rem 2rem rgba(0, 0, 0, 0.1),
+		inset -1rem -1rem 2rem rgba(255, 255, 255, 0.5);
+}
+
+/* STATIC ELEMENTS START*/
+
+.media ul {
+	list-style: none;
+	position: fixed;
+	left: 134px;
+	bottom: 140px;
+	padding: 10px 10px;
+	z-index: 100;
+}
+
+.media ul li {
+	font-size: 2.1rem;
+	margin: 24px 0;
+	list-style: none;
+}
+
+.media a {
+	-webkit-transition: margin 0.5s ease-out;
+	-moz-transition: margin 0.5s ease-out;
+	-o-transition: margin 0.5s ease-out;
+}
+
+.media a:hover {
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.contact-static {
+	font-family: 'Teko';
+	font-size: 1.8rem;
+	font-weight: 100;
+	letter-spacing: 0.5rem;
+	position: fixed;
+	right: 40px;
+	bottom: 265px;
+	z-index: 100;
+	transform: rotate(90deg);
+}
+
+.s-one {
+	bottom: 0;
+	position: fixed;
+	width: 2px;
+	height: 160px;
+	background: #ff7675;
+	left: 150px;
+	z-index: 1;
+}
+
+.s-two {
+	bottom: 0;
+	position: fixed;
+	width: 2px;
+	height: 160px;
+	background: #ff7675;
+	right: 150px;
+	z-index: 1;
+}
+
+/* STATIC ELEMENTS START*/
+
+/* SECTION ONE START*/
+
+.tag {
+	font-size: 7rem;
+	margin-bottom: 30px;
+}
+
+.mail {
+	margin: 60px 0 0 0;
+	padding: 0 auto;
+	font-family: 'Teko';
+	font-weight: 300;
+	font-size: 3rem;
+	list-style: none;
+}
+
+.mail a {
+	border-radius: 3%;
+	padding: 10px 20px;
+	box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1),
+		-1rem -1rem 2rem rgba(255, 255, 255, 0.5);
+}
+
+.mail a:hover {
+	box-shadow: inset 1rem 1rem 2rem rgba(0, 0, 0, 0.1),
+		inset -1rem -1rem 2rem rgba(255, 255, 255, 0.5);
+}
+
+/* SECTION ONE FINISH*/
+
+.landing-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	width: 90vw;
+	max-width: 120rem;
+	height: 90vh;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* SECTION ONE FINISH*/
+/* SECTION ABOUT ME START*/
+
+.about {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	width: 90vw;
+	max-width: 120rem;
+	height: 60vh;
+	margin: 0 auto;
+	position: relative;
+}
+
+.about-details {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	width: 100%;
+	padding: 30px;
+}
+
+.profile-img {
+	display: flex;
+	width: 80%;
+	margin: auto 20px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	align-self: center;
+}
+
+.about-heading {
+	text-align: center;
+	line-height: 0;
+	margin-bottom: 6rem;
+}
+
+.about-heading h1 {
+	padding-top: 0.8rem;
+	font-size: 7rem;
+	font-family: 'Teko';
+}
+
+.about-heading h1::before {
+	content: '';
+	background: #ff7675;
+	display: block;
+	height: 1px;
+	position: relative;
+	width: 180px;
+}
+
+.language {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+	text-align: left;
+}
+
+.language ul li {
+	font-size: 1.6rem;
+	font-weight: 200;
+	padding: 5px;
+}
+
+.language ul {
+	list-style: none;
+	margin: 0.75em 0;
+	padding: 0 1em;
+}
+
+.language li:before {
+	content: '';
+	border-color: transparent #ff7675;
+	border-style: solid;
+	border-width: 0.35em 0 0.35em 0.45em;
+	display: block;
+	height: 0;
+	left: -1em;
+	position: relative;
+	top: 0.9em;
+	width: 0;
+}
+
+/* SECTION PORTFOLIO START*/
+.portfolio {
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	padding: 0 auto;
+	margin: 0 auto;
+}
+
+.portfolio-title {
+	text-align: right;
+	line-height: 0;
+	margin-top: 10rem;
+	margin-bottom: 5rem;
+	width: 20%;
+}
+
+.portfolio-title h1 {
+	font-size: 6rem;
+}
+.portfolio-title h1::before {
+	content: '';
+	background: #ff7675;
+	display: block;
+	height: 1px;
+	position: relative;
+	width: 210px;
+}
+
+.project {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	width: 90vw;
+	max-width: 160rem;
+	height: 40vh;
+	padding: 0 auto;
+	margin-bottom: 5rem;
+	position: relative;
+}
+
+.project-second {
+	flex-direction: row;
+}
+
+.project-img {
+	display: flex;
+	width: 100%;
+	margin: auto 20px;
+}
+
+.project-img img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+.project-img:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.project-details {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	width: 80%;
+	padding: 30px;
+}
+
+.project-heading {
+	text-align: left;
+	line-height: 0;
+	margin-bottom: 6rem;
+}
+
+.project-heading h4 {
+	padding: 0 auto;
+	margin: 5rem auto;
+	font-size: 1.8rem;
+	font-family: 'Teko';
+	font-weight: 200;
+}
+
+.project-heading a {
+	padding: 0 auto;
+	font-size: 5rem;
+	font-family: 'Teko';
+	font-weight: 300;
+}
+
+.project-lang {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.__project-lang {
+	display: flex;
+	flex-direction: row;
+}
+
+.__project-git {
+	width: 45%;
+
+	display: flex;
+	flex-direction: row;
+}
+
+.__project-git h4 {
+	font-size: 2rem;
+	font-family: 'Teko';
+	font-weight: 200;
+	margin-right: 0.8rem;
+}
+
+.project-lang h6 {
+	margin-right: 3rem;
+	font-size: 2rem;
+	font-family: 'Teko';
+	font-weight: 200;
+	align-items: flex-start;
+}
+
+.project-lang a {
+	margin: 0 2rem;
+	font-size: 2rem;
+}
+
+/* SECTION PORTFOLIO END*/
+
+/* SECTION OTHER PROJECTS START*/
+
+.other-projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100vw;
+	height: 100%;
+	padding: 0 auto;
+	margin: 0 auto;
+}
+
+.other-projects-heading {
+	padding-top: 5rem;
+}
+
+.other-projects-heading h1 {
+	font-size: 6rem;
+}
+
+.other-projects-heading h4 {
+	font-size: 1.8rem;
+	font-weight: 200;
+	margin-bottom: 4rem;
+}
+
+.other-projects-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.other-project-box {
+	background-color: #f5f5f5;
+	width: 30rem;
+	height: 30rem;
+	padding: 2rem;
+	margin: 20px 10px 0 10px;
+
+	display: flex;
+	flex-direction: column;
+
+	-webkit-transition: padding 0.5s ease-out;
+	-moz-transition: padding 0.5s ease-out;
+	-o-transition: padding 0.5s ease-out;
+}
+
+.other-project-box:hover {
+	margin-top: 5px;
+}
+
+.__project-web {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.__project-web a {
+	font-size: 3rem;
+	margin-left: 2rem;
+}
+
+.__description {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: left;
+	height: 100%;
+}
+
+.__description h4 {
+	font-family: 'Teko';
+	font-size: 3rem;
+	font-weight: 100;
+	margin-top: 1rem;
+}
+
+.__other-project-lang {
+	display: flex;
+	flex-direction: row;
+}
+
+.__other-project-lang h6 {
+	margin-right: 3rem;
+	font-size: 1.6rem;
+	font-family: 'Teko';
+	font-weight: 200;
+	align-items: flex-start;
+}
+
+.project__archive {
+	display: none;
+}
+
+.show_more {
+	height: 160px;
+	margin: 60px 0 0 0;
+	padding: 0 auto;
+	font-family: 'Teko';
+	font-weight: 300;
+	font-size: 3rem;
+	list-style: none;
+}
+
+.show_more a {
+	border-radius: 3%;
+	padding: 10px 20px;
+	box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1),
+		-1rem -1rem 2rem rgba(255, 255, 255, 0.5);
+}
+
+.show_more a:hover {
+	box-shadow: inset 1rem 1rem 2rem rgba(0, 0, 0, 0.1),
+		inset -1rem -1rem 2rem rgba(255, 255, 255, 0.5);
+}
+
+/* SECTION OTHER PROJECTS END*/
+
+/* SECTION CONTACT START*/
+
+.__contact {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	width: 90vw;
+	max-width: 120rem;
+	height: 80vh;
+	margin: 0 auto;
+	position: relative;
+}
+
+.contact-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	padding: 30px;
+}
+
+.contact-heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	line-height: 0;
+	margin-bottom: 8rem;
+}
+
+.contact-heading h4 {
+	padding-top: 0.8rem;
+	font-size: 3rem;
+	font-weight: 200;
+	font-family: 'Teko';
+	margin-bottom: 5rem;
+}
+
+.contact-heading h1 {
+	padding-top: 0.8rem;
+	font-size: 7rem;
+	font-family: 'Teko';
+	width: 60rem;
+	margin-right: 30px;
+}
+
+/* SECTION CONTACT END*/
+
+.copyright {
+	background-color: #f5f5f5;
+	width: 100%;
+	text-align: center;
+	padding: 1.3rem 0;
+	position: relative;
+}
+
+.copyright p {
+	font-size: 1.5rem;
+}
+
+.up {
+	position: absolute;
+	width: 5rem;
+	height: 5rem;
+	background-color: #ffe6e6;
+	top: -2.5rem;
+	right: 5rem;
+	border-radius: 100%;
+	display: flex;
+	animation: pulse 2s infinite;
+	cursor: pointer;
+}
+
+.up i {
+	font-size: 2rem;
+	margin: auto;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(195, 79, 79, 0.99);
+	}
+	70% {
+		box-shadow: 0 0 0 1.5rem rgba(195, 79, 79, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(195, 79, 79, 0);
+	}
+}

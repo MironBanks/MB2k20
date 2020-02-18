@@ -1,0 +1,532 @@
+/*Start media queries*/
+
+@media screen and (max-width: 768px) {
+	.header {
+		display: none;
+	}
+	#distance {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.phone {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.header,
+	.contact-static,
+	.media,
+	.s-one,
+	.s-two {
+		display: none;
+	}
+
+	h1 {
+		font-size: 4rem;
+	}
+
+	h6 {
+		font-size: 1.4rem;
+	}
+
+	p {
+		font-size: 1.4rem;
+		font-weight: 300;
+	}
+
+	.tag-title {
+		font-size: 8rem;
+		font-weight: 300;
+		padding-top: 5rem;
+		line-height: 5rem;
+	}
+
+	.tag {
+		font-size: 4rem;
+		margin-bottom: 20px;
+	}
+
+	.landing-page {
+		width: 90vw;
+		height: 100vh;
+		padding: 0 2rem;
+	}
+
+	.section {
+		margin-bottom: 4rem;
+	}
+
+	.about {
+		flex-direction: column;
+		width: 90vw;
+		height: 100%;
+	}
+
+	.profile-img {
+		width: 95%;
+		margin: auto 20px;
+	}
+
+	.about-details {
+		margin-top: 5rem;
+		padding: 10px;
+	}
+
+	.about-heading {
+		text-align: right;
+		width: 90%;
+	}
+
+	.about-heading h1 {
+		font-size: 4rem;
+	}
+
+	.about-heading h1::before {
+		width: 40%;
+	}
+
+	.language ul li {
+		font-size: 1.4rem;
+	}
+
+	.portfolio {
+		width: 100vw;
+		height: 100%;
+	}
+
+	.portfolio-title {
+		text-align: right;
+		margin-top: 5rem;
+		margin-bottom: 10rem;
+		width: 80%;
+	}
+
+	.portfolio-title h1 {
+		font-size: 4rem;
+		padding-right: 1rem;
+		width: 100%;
+	}
+
+	.portfolio-title h1::before {
+		width: 10%;
+	}
+
+	.project {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		width: 90vw;
+		height: 100%;
+	}
+
+	.project-img {
+		display: flex;
+		width: 100%;
+		margin: 0 0;
+	}
+
+	.project-details {
+		width: 80%;
+		padding: 10px;
+	}
+
+	.project-heading {
+		text-align: left;
+		line-height: 0;
+		margin-bottom: 2rem;
+	}
+
+	.project-heading h4 {
+		padding: 0 auto;
+		margin: 1rem 0 4rem 0;
+		font-size: 1.8rem;
+		font-family: 'Teko';
+		font-weight: 200;
+	}
+
+	.project-heading a {
+		padding: 0 auto;
+		font-size: 4rem;
+		font-family: 'Teko';
+		font-weight: 300;
+	}
+
+	.project-lang {
+		width: 90vw;
+	}
+
+	.project-lang h6 {
+		font-size: 1.5rem;
+	}
+
+	.other-projects-heading h1 {
+		font-size: 4rem;
+	}
+
+	.other-projects-wrapper {
+		flex-direction: column;
+	}
+
+	.__contact {
+		width: 90vw;
+		max-width: 120rem;
+		height: 80vh;
+	}
+
+	.contact-heading h1 {
+		font-size: 7rem;
+		width: 100%;
+		margin: 0 0 7rem 0;
+	}
+
+	.contact-heading h4 {
+		font-size: 2rem;
+		font-weight: 200;
+		margin-bottom: 5rem;
+	}
+
+	.copyright p {
+		font-size: 1rem;
+	}
+
+	.social-media a {
+		font-size: 2rem;
+	}
+
+	.up {
+		right: 2rem;
+	}
+}
+
+@media screen and (min-width: 425px) and (max-width: 762px) {
+	.contact-static,
+	.media,
+	.s-one,
+	.s-two {
+		display: none;
+	}
+
+	.landing-page {
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.landing-text {
+		width: 80vw;
+	}
+
+	.about {
+		flex-direction: column;
+		width: 80vw;
+		height: 100%;
+	}
+	.about-details {
+		margin-top: 5rem;
+		padding: 10px;
+	}
+
+	.portfolio {
+		width: 100vw;
+		height: 100%;
+	}
+
+	.portfolio-title {
+		text-align: right;
+		margin-top: 5rem;
+		margin-bottom: 10rem;
+		width: 80%;
+	}
+
+	.portfolio-title h1 {
+		font-size: 4rem;
+		padding-right: 1rem;
+		width: 80%;
+	}
+
+	.portfolio-title h1::before {
+		width: 40%;
+	}
+
+	.project {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		width: 70vw;
+		height: 100%;
+	}
+
+	.project-img {
+		display: flex;
+		width: 100%;
+		margin: 0 0;
+	}
+
+	.project-details {
+		width: 80%;
+		padding: 10px;
+	}
+
+	.project-heading {
+		text-align: left;
+		line-height: 0;
+		margin-bottom: 2rem;
+	}
+
+	.project-heading h4 {
+		padding: 0 auto;
+		margin: 2rem 0 4rem 0;
+		font-size: 2rem;
+	}
+
+	.project-heading a {
+		padding: 0 auto;
+		font-size: 5rem;
+	}
+
+	.project-lang {
+		width: 70vw;
+	}
+
+	.project-lang h6 {
+		font-size: 2rem;
+	}
+
+	.other-projects-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.__contact {
+		width: 90vw;
+		max-width: 120rem;
+		height: 100vh;
+	}
+
+	.contact-heading h1 {
+		font-size: 7rem;
+		width: 100%;
+		margin: 0 0 7rem 0;
+	}
+
+	.contact-heading h4 {
+		font-size: 2rem;
+		font-weight: 200;
+		margin-bottom: 5rem;
+	}
+
+	.copyright p {
+		font-size: 1rem;
+	}
+
+	.social-media a {
+		font-size: 2rem;
+	}
+
+	.up {
+		right: 2rem;
+	}
+}
+
+@media screen and (min-width: 762px) and (max-width: 1024px) {
+	.phone {
+		display: none;
+	}
+
+	p {
+		font-size: 1.6rem;
+		font-weight: 300;
+		line-height: 2.2rem;
+	}
+
+	.media ul {
+		left: 80px;
+		bottom: 40px;
+	}
+
+	.media ul li {
+		font-size: 1.6rem;
+	}
+
+	.s-one {
+		width: 1px;
+		height: 65px;
+		left: 98px;
+	}
+
+	.contact-static {
+		right: 8px;
+		bottom: 170px;
+	}
+
+	.s-two {
+		width: 1px;
+		height: 65px;
+		right: 117px;
+	}
+
+	.tag-title {
+		font-size: 11.5rem;
+		padding-top: 5rem;
+		line-height: 5rem;
+	}
+
+	.tag {
+		font-size: 6rem;
+		margin-bottom: 30px;
+	}
+
+	.about {
+		flex-direction: column;
+		width: 75vw;
+		height: 100%;
+		margin: 20rem auto;
+	}
+
+	.about-details {
+		margin-top: 5rem;
+		width: 80%;
+	}
+
+	.profile-img {
+		display: flex;
+		width: 60%;
+		margin: auto 20px;
+	}
+
+	.portfolio-title {
+		width: 60%;
+	}
+
+	.project {
+		height: 100%;
+		width: 75vw;
+		margin-bottom: 2rem;
+	}
+
+	.project-heading a {
+		padding: 0 auto;
+		font-size: 3rem;
+		font-weight: 200;
+	}
+
+	.project-lang h6 {
+		font-size: 1.8rem;
+	}
+
+	.other-projects {
+		width: 70vw;
+	}
+
+	.other-project-box {
+		width: 28rem;
+		height: 28rem;
+	}
+
+	.other-projects-wrapper {
+		float: left;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.__contact {
+		width: 90vw;
+		max-width: 120rem;
+		height: 100vh;
+	}
+}
+/* macbook 1236-650 */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+	.phone {
+		display: none;
+	}
+
+	p {
+		font-size: 1.6rem;
+		font-weight: 300;
+		line-height: 2.2rem;
+	}
+
+	.media ul {
+		left: 80px;
+		bottom: 40px;
+	}
+
+	.media ul li {
+		font-size: 1.6rem;
+	}
+
+	.s-one {
+		width: 1px;
+		height: 65px;
+		left: 98px;
+	}
+
+	.contact-static {
+		right: 8px;
+		bottom: 170px;
+	}
+
+	.s-two {
+		width: 1px;
+		height: 65px;
+		right: 117px;
+	}
+
+	.tag-title {
+		font-size: 11.5rem;
+		padding-top: 5rem;
+		line-height: 5rem;
+	}
+
+	.tag {
+		font-size: 6rem;
+		margin-bottom: 30px;
+	}
+
+	.about {
+		flex-direction: column;
+		width: 75vw;
+		height: 100%;
+		margin: 20rem auto;
+	}
+
+	.about-details {
+		margin-top: 5rem;
+		width: 80%;
+	}
+
+	.profile-img {
+		display: flex;
+		width: 60%;
+		margin: auto 20px;
+	}
+
+	.portfolio-title {
+		width: 60%;
+	}
+
+	.project {
+		height: 100%;
+		width: 75vw;
+		margin-bottom: 2rem;
+	}
+
+	.project-heading a {
+		padding: 0 auto;
+		font-size: 3rem;
+		font-weight: 200;
+	}
+
+	.project-lang h6 {
+		font-size: 1.8rem;
+	}
+
+	.__contact {
+		width: 90vw;
+		max-width: 120rem;
+		height: 100vh;
+	}
+}
