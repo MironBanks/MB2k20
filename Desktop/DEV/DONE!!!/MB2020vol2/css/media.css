@@ -342,7 +342,7 @@
 	}
 
 	.media ul {
-		left: 80px;
+		left: 70px;
 		bottom: 40px;
 	}
 
@@ -437,7 +437,7 @@
 		height: 100vh;
 	}
 }
-/* macbook 1236-650 */
+/* mac 1236-650 */
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
 	.phone {
 		display: none;
@@ -450,7 +450,7 @@
 	}
 
 	.media ul {
-		left: 80px;
+		left: 87px;
 		bottom: 40px;
 	}
 
